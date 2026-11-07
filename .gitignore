@@ -1,0 +1,22 @@
+# Local-only working material (excluded from public source)
+_*/
+AGENTS.md
+doc/*.md
+!doc/ASR_Model_Comparison_20261106.md
+mod/*work*/
+mod/asr/worker.py
+out/*work*.bat
+.obsidian/
+.runtime/
+log/
+bin/
+test/
+engine/
+models/
+*.pyc
+**/__pycache__/
+*.safetensors
+*.gguf
+*.onnx
+*.env
+*.env.*

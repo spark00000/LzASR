@@ -1,0 +1,613 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2495" height="953" viewBox="0 0 2495 953" role="img" aria-labelledby="title desc">
+<title id="title">LzASR 15개 언어 61건 모델 성능 전체 매트릭스</title>
+<desc id="desc">언어별 WER 또는 CER 측정 결과를 영어, 한국어, 독일어, 나머지 언어 순으로 16열 표시. 미측정은 회색이며 모델 실행 방식 15종을 별도 행으로 표시. 장편 ChatGPT reference는 00:00:00~00:37:45 부분전사 상대 WER(5개 구간, 2656단어)이며 전체 영상 정답률이 아닙니다. 영어 test40과 validation7은 다른 측정입니다.</desc>
+<rect x="0" y="0" width="2495" height="953" rx="0" fill="#FFFFFF"/>
+<rect x="0" y="0" width="2495" height="9" rx="0" fill="#047857"/>
+<text x="20" y="49" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="31" fill="#0F172A" font-weight="750" text-anchor="start">ASR 모델 언어별 정확도 통합 비교</text>
+<text x="20" y="81" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="19" fill="#334155" font-weight="650" text-anchor="start">다국어 실측 61건 + ChatGPT 부분 비교 9건 · 언어 15개 · ASR 실행 방식 15개 · WER/CER 낮을수록 우수</text>
+<text x="20" y="112" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#475569" font-weight="500" text-anchor="start">영어 test40 / 영어 val7 / 한국어 / 독일어 / 기타 언어  |  같은 열 안에서만 상대 수준을 비교합니다</text>
+<rect x="13" y="126" width="2469" height="62" rx="5" fill="#F1F5F9"/>
+<text x="23" y="166" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#334155" font-weight="750" text-anchor="start">모델·실행 방식</text>
+<text x="383.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">영어</text>
+<text x="383.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">test40 WER</text>
+<rect x="320" y="126" width="2" height="738" rx="0" fill="#CBD5E1"/>
+<text x="509.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">영어</text>
+<text x="509.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 WER</text>
+<text x="635.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">한국어</text>
+<text x="635.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 CER</text>
+<rect x="572" y="126" width="2" height="738" rx="0" fill="#CBD5E1"/>
+<text x="761.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">독일어</text>
+<text x="761.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 WER</text>
+<rect x="698" y="126" width="2" height="738" rx="0" fill="#CBD5E1"/>
+<text x="887.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">체코어</text>
+<text x="887.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 WER</text>
+<rect x="824" y="126" width="2" height="738" rx="0" fill="#CBD5E1"/>
+<text x="1013.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">덴마크어</text>
+<text x="1013.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 WER</text>
+<text x="1139.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">그리스어</text>
+<text x="1139.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 WER</text>
+<text x="1265.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">스페인어</text>
+<text x="1265.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 WER</text>
+<text x="1391.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">프랑스어</text>
+<text x="1391.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 WER</text>
+<text x="1517.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">일본어</text>
+<text x="1517.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 CER</text>
+<text x="1643.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">네덜란드어</text>
+<text x="1643.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 WER</text>
+<text x="1769.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">폴란드어</text>
+<text x="1769.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 WER</text>
+<text x="1895.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">포르투갈어</text>
+<text x="1895.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 WER</text>
+<text x="2021.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">루마니아어</text>
+<text x="2021.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 WER</text>
+<text x="2147.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">러시아어</text>
+<text x="2147.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 WER</text>
+<text x="2273.0" y="150" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="17" fill="#0F172A" font-weight="700" text-anchor="middle">스웨덴어</text>
+<text x="2273.0" y="173" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">val7 WER</text>
+<rect x="13" y="192" width="2335" height="42" rx="0" fill="#F8FAFC"/>
+<text x="24" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">01</text>
+<text x="57" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">Whisper turbo</text>
+<rect x="323" y="195" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="383.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="449" y="195" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="509.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#1D4ED8" font-weight="750" text-anchor="middle">36.3</text>
+<rect x="575" y="195" width="120" height="36" rx="5" fill="#D1FAE5"/>
+<text x="635.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#065F46" font-weight="750" text-anchor="middle">14.6</text>
+<rect x="701" y="195" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="761.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">20.6</text>
+<rect x="827" y="195" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="887.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="953" y="195" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1013.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1079" y="195" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1139.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1205" y="195" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1265.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1331" y="195" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="1391.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#1D4ED8" font-weight="750" text-anchor="middle">11.9</text>
+<rect x="1457" y="195" width="120" height="36" rx="5" fill="#047857"/>
+<text x="1517.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" font-weight="750" text-anchor="middle">2.4</text>
+<rect x="1583" y="195" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1643.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1709" y="195" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1769.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1835" y="195" width="120" height="36" rx="5" fill="#047857"/>
+<text x="1895.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" font-weight="750" text-anchor="middle">8.4</text>
+<rect x="1961" y="195" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2021.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2087" y="195" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2147.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2213" y="195" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2273.0" y="220" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<text x="24" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">02</text>
+<text x="57" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">Whisper turbo HF native</text>
+<rect x="323" y="237" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="383.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#1D4ED8" font-weight="750" text-anchor="middle">6.2</text>
+<rect x="449" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="509.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="575" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="635.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="701" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="761.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="827" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="887.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="953" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1013.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1079" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1139.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1205" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1265.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1331" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1391.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1457" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1517.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1583" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1643.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1709" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1769.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1835" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1895.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1961" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2021.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2087" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2147.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2213" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2273.0" y="262" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="13" y="276" width="2335" height="42" rx="0" fill="#F8FAFC"/>
+<text x="24" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">03</text>
+<text x="57" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">Whisper large-v3 (chunk)</text>
+<rect x="323" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="383.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="449" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="509.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="575" y="279" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="635.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#1D4ED8" font-weight="750" text-anchor="middle">20.1</text>
+<rect x="701" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="761.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="827" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="887.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="953" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1013.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1079" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1139.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1205" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1265.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1331" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1391.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1457" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1517.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1583" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1643.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1709" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1769.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1835" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1895.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1961" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2021.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2087" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2147.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2213" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2273.0" y="304" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<text x="24" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">04</text>
+<text x="57" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">Whisper large-v3 (native)</text>
+<rect x="323" y="321" width="120" height="36" rx="5" fill="#D1FAE5"/>
+<text x="383.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#065F46" font-weight="750" text-anchor="middle">4.9</text>
+<rect x="449" y="321" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="509.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#1D4ED8" font-weight="750" text-anchor="middle">36.3</text>
+<rect x="575" y="321" width="120" height="36" rx="5" fill="#D1FAE5"/>
+<text x="635.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#065F46" font-weight="750" text-anchor="middle">14.4</text>
+<rect x="701" y="321" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="761.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="827" y="321" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="887.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="953" y="321" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1013.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1079" y="321" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1139.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1205" y="321" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1265.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1331" y="321" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1391.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1457" y="321" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="1517.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#1D4ED8" font-weight="750" text-anchor="middle">5.6</text>
+<rect x="1583" y="321" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1643.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1709" y="321" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1769.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1835" y="321" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1895.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1961" y="321" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2021.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2087" y="321" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2147.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2213" y="321" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2273.0" y="346" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="13" y="360" width="2335" height="42" rx="0" fill="#F8FAFC"/>
+<text x="24" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">05</text>
+<text x="57" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">BuzzASR Korean (existing)</text>
+<rect x="323" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="383.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="449" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="509.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="575" y="363" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="635.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">26.8</text>
+<rect x="701" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="761.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="827" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="887.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="953" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1013.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1079" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1139.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1205" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1265.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1331" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1391.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1457" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1517.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1583" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1643.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1709" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1769.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1835" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1895.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1961" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2021.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2087" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2147.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2213" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2273.0" y="388" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<text x="24" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">06</text>
+<text x="57" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">BuzzASR Korean beam5 (chunk)</text>
+<rect x="323" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="383.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="449" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="509.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="575" y="405" width="120" height="36" rx="5" fill="#047857"/>
+<text x="635.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" font-weight="750" text-anchor="middle">10.3</text>
+<rect x="701" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="761.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="827" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="887.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="953" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1013.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1079" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1139.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1205" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1265.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1331" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1391.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1457" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1517.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1583" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1643.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1709" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1769.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1835" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1895.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1961" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2021.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2087" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2147.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2213" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2273.0" y="430" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="13" y="444" width="2335" height="42" rx="0" fill="#F8FAFC"/>
+<text x="24" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">07</text>
+<text x="57" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">BuzzASR Korean beam5 (native)</text>
+<rect x="323" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="383.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="449" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="509.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="575" y="447" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="635.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">87.0</text>
+<rect x="701" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="761.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="827" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="887.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="953" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1013.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1079" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1139.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1205" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1265.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1331" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1391.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1457" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1517.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1583" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1643.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1709" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1769.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1835" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1895.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1961" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2021.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2087" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2147.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2213" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2273.0" y="472" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<text x="24" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">08</text>
+<text x="57" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">Nemotron 3.5 streaming</text>
+<rect x="323" y="489" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="383.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">10.5</text>
+<rect x="449" y="489" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="509.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="575" y="489" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="635.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#1D4ED8" font-weight="750" text-anchor="middle">16.3</text>
+<rect x="701" y="489" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="761.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="827" y="489" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="887.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="953" y="489" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1013.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1079" y="489" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1139.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1205" y="489" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1265.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1331" y="489" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1391.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1457" y="489" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1517.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1583" y="489" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1643.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1709" y="489" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1769.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1835" y="489" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1895.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1961" y="489" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2021.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2087" y="489" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2147.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2213" y="489" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2273.0" y="514" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="13" y="528" width="2335" height="42" rx="0" fill="#F8FAFC"/>
+<text x="24" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">09</text>
+<text x="57" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">Qwen 0.6B</text>
+<rect x="323" y="531" width="120" height="36" rx="5" fill="#D1FAE5"/>
+<text x="383.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#065F46" font-weight="750" text-anchor="middle">4.9</text>
+<rect x="449" y="531" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="509.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#1D4ED8" font-weight="750" text-anchor="middle">23.0</text>
+<rect x="575" y="531" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="635.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">26.8</text>
+<rect x="701" y="531" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="761.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">11.8</text>
+<rect x="827" y="531" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="887.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="953" y="531" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1013.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1079" y="531" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1139.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1205" y="531" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1265.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1331" y="531" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="1391.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">18.6</text>
+<rect x="1457" y="531" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="1517.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">14.3</text>
+<rect x="1583" y="531" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1643.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1709" y="531" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1769.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1835" y="531" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="1895.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">23.8</text>
+<rect x="1961" y="531" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2021.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2087" y="531" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2147.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2213" y="531" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2273.0" y="556" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<text x="24" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">10</text>
+<text x="57" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">Qwen 1.7B (legacy)</text>
+<rect x="323" y="573" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="383.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="449" y="573" width="120" height="36" rx="5" fill="#D1FAE5"/>
+<text x="509.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#065F46" font-weight="750" text-anchor="middle">22.1</text>
+<rect x="575" y="573" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="635.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#1D4ED8" font-weight="750" text-anchor="middle">21.8</text>
+<rect x="701" y="573" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="761.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#1D4ED8" font-weight="750" text-anchor="middle">10.3</text>
+<rect x="827" y="573" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="887.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="953" y="573" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1013.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1079" y="573" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1139.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1205" y="573" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1265.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1331" y="573" width="120" height="36" rx="5" fill="#D1FAE5"/>
+<text x="1391.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#065F46" font-weight="750" text-anchor="middle">9.3</text>
+<rect x="1457" y="573" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="1517.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">11.9</text>
+<rect x="1583" y="573" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1643.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1709" y="573" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1769.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1835" y="573" width="120" height="36" rx="5" fill="#D1FAE5"/>
+<text x="1895.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#065F46" font-weight="750" text-anchor="middle">11.2</text>
+<rect x="1961" y="573" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2021.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2087" y="573" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2147.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2213" y="573" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2273.0" y="598" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="13" y="612" width="2335" height="42" rx="0" fill="#F8FAFC"/>
+<text x="24" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">11</text>
+<text x="57" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">Qwen 1.7B (HF native)</text>
+<rect x="323" y="615" width="120" height="36" rx="5" fill="#047857"/>
+<text x="383.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" font-weight="750" text-anchor="middle">4.0</text>
+<rect x="449" y="615" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="509.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="575" y="615" width="120" height="36" rx="5" fill="#D1FAE5"/>
+<text x="635.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#065F46" font-weight="750" text-anchor="middle">12.8</text>
+<rect x="701" y="615" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="761.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="827" y="615" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="887.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="953" y="615" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1013.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1079" y="615" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1139.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1205" y="615" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1265.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1331" y="615" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1391.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1457" y="615" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1517.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1583" y="615" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1643.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1709" y="615" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1769.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1835" y="615" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1895.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1961" y="615" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2021.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2087" y="615" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2147.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2213" y="615" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2273.0" y="640" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<text x="24" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">12</text>
+<text x="57" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">Granite 470M</text>
+<rect x="323" y="657" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="383.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">7.2</text>
+<rect x="449" y="657" width="120" height="36" rx="5" fill="#D1FAE5"/>
+<text x="509.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#065F46" font-weight="750" text-anchor="middle">11.5</text>
+<rect x="575" y="657" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="635.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="701" y="657" width="120" height="36" rx="5" fill="#047857"/>
+<text x="761.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" font-weight="750" text-anchor="middle">5.1</text>
+<rect x="827" y="657" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="887.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="953" y="657" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1013.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1079" y="657" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1139.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1205" y="657" width="120" height="36" rx="5" fill="#047857"/>
+<text x="1265.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" font-weight="750" text-anchor="middle">3.3</text>
+<rect x="1331" y="657" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="1391.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">22.2</text>
+<rect x="1457" y="657" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="1517.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#1D4ED8" font-weight="750" text-anchor="middle">4.5</text>
+<rect x="1583" y="657" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1643.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1709" y="657" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1769.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1835" y="657" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="1895.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">17.5</text>
+<rect x="1961" y="657" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2021.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2087" y="657" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2147.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2213" y="657" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2273.0" y="682" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="13" y="696" width="2335" height="42" rx="0" fill="#F8FAFC"/>
+<text x="24" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">13</text>
+<text x="57" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">Granite 2B</text>
+<rect x="323" y="699" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="383.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">6.9</text>
+<rect x="449" y="699" width="120" height="36" rx="5" fill="#047857"/>
+<text x="509.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" font-weight="750" text-anchor="middle">9.7</text>
+<rect x="575" y="699" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="635.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="701" y="699" width="120" height="36" rx="5" fill="#047857"/>
+<text x="761.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" font-weight="750" text-anchor="middle">5.1</text>
+<rect x="827" y="699" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="887.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="953" y="699" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1013.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1079" y="699" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1139.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1205" y="699" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="1265.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">5.6</text>
+<rect x="1331" y="699" width="120" height="36" rx="5" fill="#047857"/>
+<text x="1391.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" font-weight="750" text-anchor="middle">3.6</text>
+<rect x="1457" y="699" width="120" height="36" rx="5" fill="#D1FAE5"/>
+<text x="1517.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#065F46" font-weight="750" text-anchor="middle">3.7</text>
+<rect x="1583" y="699" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1643.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1709" y="699" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1769.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1835" y="699" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="1895.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#1D4ED8" font-weight="750" text-anchor="middle">15.4</text>
+<rect x="1961" y="699" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2021.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2087" y="699" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2147.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2213" y="699" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2273.0" y="724" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<text x="24" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">14</text>
+<text x="57" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">Parakeet v3</text>
+<rect x="323" y="741" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="383.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#1D4ED8" font-weight="750" text-anchor="middle">5.5</text>
+<rect x="449" y="741" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="509.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">57.5</text>
+<rect x="575" y="741" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="635.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="701" y="741" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="761.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#1D4ED8" font-weight="750" text-anchor="middle">8.1</text>
+<rect x="827" y="741" width="120" height="36" rx="5" fill="#FEF3C7"/>
+<text x="887.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#92400E" font-weight="750" text-anchor="middle">14.7</text>
+<rect x="953" y="741" width="120" height="36" rx="5" fill="#FEF3C7"/>
+<text x="1013.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#92400E" font-weight="750" text-anchor="middle">38.3</text>
+<rect x="1079" y="741" width="120" height="36" rx="5" fill="#FEF3C7"/>
+<text x="1139.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#92400E" font-weight="750" text-anchor="middle">31.4</text>
+<rect x="1205" y="741" width="120" height="36" rx="5" fill="#047857"/>
+<text x="1265.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#FFFFFF" font-weight="750" text-anchor="middle">3.3</text>
+<rect x="1331" y="741" width="120" height="36" rx="5" fill="#D1FAE5"/>
+<text x="1391.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#065F46" font-weight="750" text-anchor="middle">9.3</text>
+<rect x="1457" y="741" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1517.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1583" y="741" width="120" height="36" rx="5" fill="#FEF3C7"/>
+<text x="1643.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#92400E" font-weight="750" text-anchor="middle">13.5</text>
+<rect x="1709" y="741" width="120" height="36" rx="5" fill="#FEF3C7"/>
+<text x="1769.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#92400E" font-weight="750" text-anchor="middle">17.2</text>
+<rect x="1835" y="741" width="120" height="36" rx="5" fill="#D1FAE5"/>
+<text x="1895.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#065F46" font-weight="750" text-anchor="middle">11.2</text>
+<rect x="1961" y="741" width="120" height="36" rx="5" fill="#FEF3C7"/>
+<text x="2021.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#92400E" font-weight="750" text-anchor="middle">33.7</text>
+<rect x="2087" y="741" width="120" height="36" rx="5" fill="#FEF3C7"/>
+<text x="2147.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#92400E" font-weight="750" text-anchor="middle">18.6</text>
+<rect x="2213" y="741" width="120" height="36" rx="5" fill="#FEF3C7"/>
+<text x="2273.0" y="766" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#92400E" font-weight="750" text-anchor="middle">20.3</text>
+<rect x="13" y="780" width="2335" height="42" rx="0" fill="#F8FAFC"/>
+<text x="24" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="14" fill="#64748B" font-weight="600" text-anchor="start">15</text>
+<text x="57" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#172033" font-weight="600" text-anchor="start">Fun-ASR 800M</text>
+<rect x="323" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="383.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="449" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="509.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="575" y="783" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="635.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#9F1239" font-weight="750" text-anchor="middle">41.2</text>
+<rect x="701" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="761.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="827" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="887.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="953" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1013.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1079" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1139.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1205" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1265.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1331" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1391.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1457" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1517.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1583" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1643.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1709" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1769.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1835" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="1895.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="1961" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2021.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2087" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2147.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2213" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2273.0" y="808" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="18" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="15" y="827" width="2465" height="1" rx="0" fill="#CBD5E1"/>
+<rect x="20" y="843" width="18" height="18" rx="4" fill="#047857"/>
+<text x="46" y="859" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="15" fill="#334155" font-weight="500" text-anchor="start">해당 열 최저</text>
+<rect x="225" y="843" width="18" height="18" rx="4" fill="#D1FAE5"/>
+<text x="251" y="859" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="15" fill="#334155" font-weight="500" text-anchor="start">상위</text>
+<rect x="430" y="843" width="18" height="18" rx="4" fill="#DBEAFE"/>
+<text x="456" y="859" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="15" fill="#334155" font-weight="500" text-anchor="start">중간</text>
+<rect x="635" y="843" width="18" height="18" rx="4" fill="#FEE2E2"/>
+<text x="661" y="859" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="15" fill="#334155" font-weight="500" text-anchor="start">하위</text>
+<rect x="840" y="843" width="18" height="18" rx="4" fill="#FEF3C7"/>
+<text x="866" y="859" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="15" fill="#334155" font-weight="500" text-anchor="start">측정 1개</text>
+<rect x="1045" y="843" width="18" height="18" rx="4" fill="#E2E8F0"/>
+<text x="1071" y="859" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="15" fill="#334155" font-weight="500" text-anchor="start">미측정</text>
+<text x="20" y="899" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="16" fill="#334155" font-weight="600" text-anchor="start">측정값 1개인 언어에는 상대 최상위 순위를 부여하지 않습니다. 모든 숫자는 실제 모델별 SRT에서 다시 계산했습니다.</text>
+<text x="20" y="927" font-family="Segoe UI, Arial, Noto Sans KR, sans-serif" font-size="15" fill="#475569" font-weight="500" text-anchor="start">언어·평가셋마다 WER 또는 CER와 발화 구성이 다릅니다. 전체 평균과 종합 최고 모델 판정은 제공하지 않습니다.</text>
+<rect x="2339" y="126" width="2" height="738" rx="0" fill="#CBD5E1"/>
+<text x="2405" y="150" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#0F172A" font-weight="700" text-anchor="middle">장편 ChatGPT</text>
+<text x="2405" y="173" font-family="Segoe UI, Arial, sans-serif" font-size="12" fill="#64748B" font-weight="600" text-anchor="middle">부분 WER</text>
+<rect x="2345" y="195" width="120" height="36" rx="5" fill="#D1FAE5"/>
+<text x="2405" y="220" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#065F46" font-weight="750" text-anchor="middle">31.97%</text>
+<rect x="2345" y="237" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2405" y="262" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2345" y="279" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2405" y="304" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2345" y="321" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="2405" y="346" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#1D4ED8" font-weight="750" text-anchor="middle">39.65%</text>
+<rect x="2345" y="363" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2405" y="388" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2345" y="405" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2405" y="430" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2345" y="447" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2405" y="472" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+<rect x="2345" y="489" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="2405" y="514" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#1D4ED8" font-weight="750" text-anchor="middle">40.29%</text>
+<rect x="2345" y="531" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="2405" y="556" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#9F1239" font-weight="750" text-anchor="middle">43.19%</text>
+<rect x="2345" y="573" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="2405" y="598" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#1D4ED8" font-weight="750" text-anchor="middle">37.50%</text>
+<rect x="2345" y="615" width="120" height="36" rx="5" fill="#DBEAFE"/>
+<text x="2405" y="640" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#1D4ED8" font-weight="750" text-anchor="middle">33.17%</text>
+<rect x="2345" y="657" width="120" height="36" rx="5" fill="#047857"/>
+<text x="2405" y="682" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#FFFFFF" font-weight="750" text-anchor="middle">31.51%</text>
+<rect x="2345" y="699" width="120" height="36" rx="5" fill="#FEE2E2"/>
+<text x="2405" y="724" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#9F1239" font-weight="750" text-anchor="middle">49.28%</text>
+<rect x="2345" y="741" width="120" height="36" rx="5" fill="#D1FAE5"/>
+<text x="2405" y="766" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#065F46" font-weight="750" text-anchor="middle">31.59%</text>
+<rect x="2345" y="783" width="120" height="36" rx="5" fill="#E2E8F0"/>
+<text x="2405" y="808" font-family="Segoe UI, Arial, sans-serif" font-size="17" fill="#64748B" font-weight="750" text-anchor="middle">—</text>
+</svg>
